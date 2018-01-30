@@ -33,3 +33,7 @@ cd evaluate-git-noob
 ### Exercice 1
 
 Dans le fichier reponses.txt, merci d'indiquer le SHA1 du commit (uniquement les 7 premiers caractères) appartenant à la branche master qui a pour message "Initial commit".
+
+### Exercice 2
+
+Dans le fichier reponses.txt, merci d'indiquer le SHA1 du commit (uniquement les 7 premiers caractères) appartenant à la branche emojiAmour qui a pour message "Ajout des coeurs".
