@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="two.min.js"></script>
+  </head>
+  <body>
+    <script>
+      var caseWidth = 10;
+      var numCase = 15;
+      var startingX = 200;
+      var startingY = 200;
+
+      var drawEmojiGrid = function(canvas, positionX, positionY) {
+        for (let x = 0; x < numCase; x++) {
+          for (let y = 0; y < numCase; y++) {
+            canvas.makeRectangle(
+              positionX + x * caseWidth,
+              positionY + y * caseWidth,
+              caseWidth ,
+              caseWidth);
+          }
+        }
+      }
+
+      var two = new Two({
+        fullscreen: true,
+        autostart: true
+      }).appendTo(document.body);
+        drawEmojiGrid(two, startingX, startingY);
+        drawEmojiGrid(two, startingX + (numCase + 10) * caseWidth, startingY);
+        drawEmojiGrid(two, startingX, startingY + (numCase + 10) * caseWidth);
+        drawEmojiGrid(two, startingX + (numCase + 10) * caseWidth, startingY + (numCase + 10) * caseWidth);
+    </script>
+  </body>
+</html>
