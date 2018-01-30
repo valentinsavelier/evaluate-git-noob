@@ -34,6 +34,14 @@ cd evaluate-git-noob
 
 Dans le fichier reponses.txt, merci d'indiquer le SHA1 du commit (uniquement les 7 premiers caractères) appartenant à la branche master qui a pour message "Initial commit".
 
+Faites un commit pour cette modification du fichier ayant le message "Solution exercice 1".
+
 ### Exercice 2
 
 Dans le fichier reponses.txt, merci d'indiquer le SHA1 du commit (uniquement les 7 premiers caractères) appartenant à la branche emojiAmour qui a pour message "Ajout des coeurs".
+
+Faites un commit pour cette modification du fichier ayant le message "Solution exercice 2".
+
+### Exercice 3
+
+Vous devez fusionner la branche emojiAmour à la branche master afin de récupérer sur la branche master le nouvel emoji.
