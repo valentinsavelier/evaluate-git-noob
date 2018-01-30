@@ -11,14 +11,54 @@
       var startingX = 200;
       var startingY = 200;
 
-      var drawEmojiGrid = function(canvas, positionX, positionY) {
-        for (let x = 0; x < numCase; x++) {
-          for (let y = 0; y < numCase; y++) {
-            canvas.makeRectangle(
-              positionX + x * caseWidth,
-              positionY + y * caseWidth,
+      var emojiLunettes = [
+        ['B', 'B', 'B', 'B', 'B', 'N', 'N', 'N', 'N', 'N', 'B', 'B', 'B', 'B', 'B'],
+        ['B', 'B', 'B', 'N', 'N', 'J', 'J', 'J', 'J', 'J', 'N', 'N', 'B', 'B', 'B'],
+        ['B', 'B', 'N', 'J', 'J', 'J', 'J', 'J', 'J', 'J', 'J', 'J', 'N', 'B', 'B'],
+        ['B', 'N', 'J', 'J', 'J', 'J', 'J', 'J', 'J', 'J', 'J', 'J', 'J', 'N', 'B'],
+        ['B', 'N', 'J', 'J', 'J', 'J', 'J', 'J', 'J', 'J', 'J', 'J', 'J', 'N', 'B'],
+        ['N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N'],
+        ['N', 'J', 'N', 'B', 'B', 'N', 'N', 'J', 'N', 'B', 'B', 'N', 'N', 'J', 'N'],
+        ['N', 'J', 'N', 'B', 'N', 'N', 'N', 'J', 'N', 'B', 'N', 'N', 'N', 'J', 'N'],
+        ['N', 'J', 'J', 'N', 'N', 'N', 'J', 'J', 'J', 'N', 'N', 'N', 'J', 'J', 'N'],
+        ['N', 'J', 'J', 'J', 'J', 'J', 'J', 'J', 'J', 'J', 'J', 'J', 'J', 'J', 'N'],
+        ['B', 'N', 'J', 'J', 'J', 'J', 'J', 'J', 'J', 'J', 'N', 'J', 'J', 'N', 'B'],
+        ['B', 'N', 'J', 'J', 'J', 'J', 'N', 'N', 'N', 'N', 'J', 'J', 'J', 'N', 'B'],
+        ['B', 'B', 'N', 'J', 'J', 'J', 'J', 'J', 'J', 'J', 'J', 'J', 'N', 'B', 'B'],
+        ['B', 'B', 'B', 'N', 'N', 'J', 'J', 'J', 'J', 'J', 'N', 'N', 'B', 'B', 'B'],
+        ['B', 'B', 'B', 'B', 'B', 'N', 'N', 'N', 'N', 'N', 'B', 'B', 'B', 'B', 'B']
+      ];
+
+      var drawEmoji = function(emoji, canvas, positionX, positionY) {
+
+        for (var indexLigne = 0; indexLigne < emoji.length; indexLigne++) {
+          var ligne = emoji[indexLigne];
+          for (var indexColonne = 0; indexColonne < ligne.length; indexColonne++) {
+            var valeurCase = ligne[indexColonne];
+            var rect = canvas.makeRectangle(
+              positionX + indexColonne * caseWidth,
+              positionY + indexLigne * caseWidth,
               caseWidth ,
               caseWidth);
+            switch (valeurCase) {
+              case 'B':
+                rect.fill = 'white'
+                break;
+              case 'N':
+                rect.fill = 'black'
+                break;
+              case 'J':
+                rect.fill = 'yellow'
+                break;
+              case 'R':
+                rect.fill = 'red'
+                break;
+              case 'M':
+                rect.fill = 'brown'
+                break;
+              default:
+                break;
+            }
           }
         }
       }
@@ -27,10 +67,10 @@
         fullscreen: true,
         autostart: true
       }).appendTo(document.body);
-        drawEmojiGrid(two, startingX, startingY);
-        drawEmojiGrid(two, startingX + (numCase + 10) * caseWidth, startingY);
-        drawEmojiGrid(two, startingX, startingY + (numCase + 10) * caseWidth);
-        drawEmojiGrid(two, startingX + (numCase + 10) * caseWidth, startingY + (numCase + 10) * caseWidth);
+        drawEmoji(emojiLunettes, two, startingX, startingY);
+        drawEmoji(emojiLunettes, two, startingX + (numCase + 10) * caseWidth, startingY);
+        drawEmoji(emojiLunettes, two, startingX, startingY + (numCase + 10) * caseWidth);
+        drawEmoji(emojiLunettes, two, startingX + (numCase + 10) * caseWidth, startingY + (numCase + 10) * caseWidth);
     </script>
   </body>
 </html>
