@@ -49,3 +49,8 @@ Vous devez fusionner la branche emojiAmour à la branche master afin de récupé
 ### Exercice 4
 
 Vous devez fusionner la branche emojiClinDOeil à la branche master afin de récupérer sur la branche master le nouvel emoji.
+
+### Exercice 5
+
+À partir de la branche master, vous devez créer une nouvelle branche qui doit s'appeler "emojiSurprise". Sur cette branche vous pouvez laissez libre cours à votre imagination pour créer votre propre emoji en transformant la matrice de caractères de la variable emojiSurprise. Par contre vous devez le faire en 2 commits, le premier concernera les yeux et le deuxième concernera la bouche.
+Vous devez également ajouter un tag sur le premier commit qui aura pour label "surprise1" et un tag sur le deuxième commit qui aura pour label "surprise2".
