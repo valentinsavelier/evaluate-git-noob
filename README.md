@@ -50,7 +50,8 @@ Vous devez fusionner la branche emojiAmour à la branche master afin de récupé
 
 ### Exercice 4
 
-Vous devez fusionner la branche emojiClinDOeil à la branche master afin de récupérer sur la branche master le nouvel emoji.
+Positionnez vous sur la branche emojiClinDOeil pour visualiser ce qu'elle apporte.
+Sans modifier cette branche, vous devez ensuite la fusionner à la branche master.
 
 ### Exercice 5
 
