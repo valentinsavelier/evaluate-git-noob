@@ -30,7 +30,17 @@ cd evaluate-git-noob
 
 ## Exercices
 
-Attention même si vous n'avez pas terminé les exercices, vous DEVEZ absolument pousser vos commits sur VOTRE dépôt distant.
+Attention à la fin de l'évaluation, même si vous n'avez pas terminé tous les exercices, VOUS DEVEZ ABSOLUMENT pousser votre branche master (qui doit contenir vos commits) sur VOTRE dépôt distant.
+
+```sh
+git push origin master
+```
+
+Vous devez également pousser vos tags (si vous en avez créé) sur VOTRE dépôt distant.
+
+```sh
+git push origin lenomdutag
+```
 
 ### Exercice 1
 
