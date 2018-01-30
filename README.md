@@ -45,3 +45,7 @@ Faites un commit pour cette modification du fichier ayant le message "Solution e
 ### Exercice 3
 
 Vous devez fusionner la branche emojiAmour à la branche master afin de récupérer sur la branche master le nouvel emoji.
+
+### Exercice 4
+
+Vous devez fusionner la branche emojiClinDOeil à la branche master afin de récupérer sur la branche master le nouvel emoji.
