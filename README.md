@@ -30,6 +30,8 @@ cd evaluate-git-noob
 
 ## Exercices
 
+Attention même si vous n'avez pas terminé les exercices, vous DEVEZ absolument pousser vos commits sur VOTRE dépôt distant.
+
 ### Exercice 1
 
 Dans le fichier reponses.txt, merci d'indiquer le SHA1 du commit (uniquement les 7 premiers caractères) appartenant à la branche master qui a pour message "Initial commit".
@@ -58,3 +60,7 @@ Vous devez également ajouter un tag sur le premier commit qui aura pour label "
 ### Exercice 6
 
 Vous devez fusionner la branche emojiSurprise créée précédemment à la branche master afin de récupérer sur la branche master votre nouvel emoji. La fusion devra se faire sans le mode "Fast forward".
+
+### Exercice 7
+
+Vous devez récupérer et fusionner la branche miseenformecss depuis le dépôt distant https://github.com/alvinberthelot/evaluate-git-noob.
