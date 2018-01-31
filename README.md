@@ -1,4 +1,4 @@
-git # Évaluation Git pour les débutants
+git g# Évaluation Git pour les débutants
 
 Code source pour tester vos connaissances Git avec un niveau débutant.
 
